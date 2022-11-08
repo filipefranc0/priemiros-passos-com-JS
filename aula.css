@@ -9,3 +9,11 @@ div {
     line-height: 20px;
     margin: 0 auto;
 }
+
+div#rel {
+    width: 200px;
+    height: 200px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+

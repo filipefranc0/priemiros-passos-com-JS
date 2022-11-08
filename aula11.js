@@ -2,22 +2,24 @@
 console.log(`a velocidade é ${vel}`)
 if (vel > 61) {
     console.log(`voce foi multado`)
-} */
-addEventListener ('click', verificar)
+} */ 
+var botao = document.getElementById('botao')
+botao.addEventListener ('click', verificar)
 addEventListener ('text', nome)
 
 function verificar (){
   var nome = document.getElementById('nome')
   var pais = document.getElementById('pais') 
-  var nome = String (nome.value)
-  var pais = String (pais.value) 
+  var nome =  (nome.value)
+  var pais =  (pais.value) 
   var res = document.getElementById('res')
   res.innerHTML = `bem vindo ${nome}`
+  
   if (pais == 'brasil') {
-    res.innerHTML += ` você é brasileiro`   
-  } else  {res.innerText += ` estrangeiro`}
-
-
+    res.innerHTML += ` você é brasileiro`
+  } else  {
+      res.innerHTML += ` estrangeiro`
+  }
 } 
  function relogio () {
     var data = new Date();
@@ -33,7 +35,9 @@ function verificar (){
      }
      if (seg < 10) {
         seg = "0" + seg;
-     }
+     } 
+
+    
      var horas = hora + ":" + min + ":" + seg;
      document.getElementById('relogio'). value=horas;
  }
